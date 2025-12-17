@@ -1,5 +1,5 @@
 {
-    "name": "@feedmob/sensor-tower-advanced",
+    "name": "sensor-tower-advanced",
     "version": "0.1.0",
     "description": "Advanced MCP server for Sensor Tower API (Core Advantages)",
     "main": "dist/index.js",
