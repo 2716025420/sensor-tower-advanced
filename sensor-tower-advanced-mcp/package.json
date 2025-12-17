@@ -1,0 +1,42 @@
+{
+    "name": "@feedmob/sensor-tower-advanced",
+    "version": "0.1.0",
+    "description": "Advanced MCP server for Sensor Tower API (Core Advantages)",
+    "main": "dist/index.js",
+    "author": "FeedMob",
+    "type": "module",
+    "bin": {
+        "sensor-tower-advanced": "dist/index.js"
+    },
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "scripts": {
+        "build": "tsc && shx chmod +x dist/*.js",
+        "prepare": "npm run build",
+        "watch": "tsc --watch"
+    },
+    "keywords": [
+        "mcp",
+        "sensor-tower",
+        "mcp-server",
+        "ai",
+        "llm"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.7.0",
+        "dotenv": "^16.4.7",
+        "node-fetch": "^2.7.0",
+        "zod": "^3.24.2"
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.21",
+        "@types/node-fetch": "^2.6.12",
+        "shx": "^0.3.4",
+        "typescript": "^5.8.2"
+    }
+}
